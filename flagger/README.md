@@ -46,7 +46,7 @@ helm upgrade -i ingress-nginx ingress-nginx/ingress-nginx \
 helm repo add flagger https://flagger.app
 ```
 
-5.  Install Flagger using the Helm Chart and Configure it with Prometheus 
+5.  Install Flagger using the Helm Chart and Configure it with Prometheus
 ```
 helm upgrade -i flagger flagger/flagger \
 --namespace ingress-nginx \
@@ -55,7 +55,7 @@ helm upgrade -i flagger flagger/flagger \
 ```
 
 ```
-http://{dockerHubUsername}.westus2.cloudapp.azure.com
+http://docker.io/mmalina.westus2.cloudapp.azure.com
 ```
 6.  Create the Source Definition
 ```

@@ -3,12 +3,12 @@ kind: Service
 metadata:
   name: gitops-foundations
   annotations:
-    service.beta.kubernetes.io/azure-dns-label-name: {dockerHubUsername}
+    service.beta.kubernetes.io/azure-dns-label-name: docker.io/mmalina
   namespace: flux-exercise
 spec:
   type: LoadBalancer
   selector:
-    app: gitops-foundations 
+    app: gitops-foundations
   ports:
     - port: 80
       targetPort: 8080
